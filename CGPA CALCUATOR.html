@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Simple GPA / CGPA Calculator</h2>
+
+<h3>Add Subject</h3>
+
+Credit:
+<input type="number" id="credit">
+
+Grade Point:
+<input type="number" id="grade">
+
+<button onclick="addSubject()">Add</button>
+
+<p id="subjects"></p>
+
+<button onclick="calculateGPA()">Calculate GPA</button>
+
+<h3 id="gpa"></h3>
+
+<hr>
+
+<h3>CGPA</h3>
+
+Previous CGPA:
+<input type="number" id="oldCgpa">
+
+Previous Total Credits:
+<input type="number" id="oldCredits">
+
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+
+<h3 id="cgpa"></h3>
+
+<hr>
+
+<h3>What If Mode</h3>
+
+Future Credits:
+<input type="number" id="futureCredits">
+
+Expected GPA:
+<input type="number" id="futureGpa">
+
+<button onclick="predictCGPA()">Predict</button>
+
+<h3 id="prediction"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>
